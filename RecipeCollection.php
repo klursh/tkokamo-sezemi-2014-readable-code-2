@@ -11,7 +11,7 @@ class RecipeCollection {
     //parameter check
     if ($filename === NULL) {
       echo "Class Recipe must be initialize with recipe file" . PHP_EOL;
-      echo "EXAMPLE: $recipe = new Recipe($filename)" . PHP_EOL;
+      echo 'EXAMPLE: $recipe = new Recipe($filename)' . PHP_EOL;
       return NULL;
     }
 
