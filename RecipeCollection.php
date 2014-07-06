@@ -1,5 +1,7 @@
 <?php
 
+require_once './common.php';
+
 class RecipeCollection {
 
   private $recipes;
