@@ -3,9 +3,10 @@
 
 - プログラムの実行
 
-spec5:
-	$php main.php <INPUT FILE>
+spec6:
+	$php main.php <INPUT FILE> [<ID>]
 	INPUT FILEはレシピの保存してあるファイル。
+	IDは表示するレシピのID。
 
 INPUT FILEの作成:
 	一行に1レシピを書き、適当なファイル名で保存

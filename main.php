@@ -4,7 +4,7 @@ require_once './RecipeCollection.php';
 
 //command line arg check
 if ($argc < 2) {
-  echo "{$argv[0]} <input file>" . PHP_EOL;
+  echo "{$argv[0]} <input file> [<id>]" . PHP_EOL;
   exit(1);
 }
 
