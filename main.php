@@ -15,6 +15,6 @@ if ($recipes === NULL) {
   exit(1);
 }
 
-$recipes->printRecipeWithId();
+$recipes->printAllWithId();
 
 ?>

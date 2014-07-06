@@ -18,21 +18,30 @@ class RecipeCollection {
       echo "fopen() error" . PHP_EOL;
       return NULL;
     }
+
     //import recipes
     $this->recipes = array();
     while ($line = fgets($fp)) {
-      $this->recipes[] = $line;
+      $this->add($line);
     }
 
     fclose($fp);
   }
-
-  public function printRecipeWithId() {
-    $i = 1;
-    foreach ($this->recipes as $recipe) {
-      echo  $i++ . ": " . $recipe;
+  public function printAllWithId() {
+    foreach ($this->recipes as $id => $val) {
+      $this->printWithId($id);
     }
   }
+  public function printWithId($id) {
+    if (isset($this->recipes[$id])) {
+      echo  $id . ": " . $this->recipes[$id];
+    }
+  }
+
+  private function add($recipe) {
+    $this->recipes[] = $recipe;
+  }
+
 
 }
 
