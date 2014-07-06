@@ -1,5 +1,5 @@
 <?php
 
 function chomp($s) {
-  return rtrim($str," \r\n");
+  return rtrim($s, " \r\n");
 }

@@ -24,7 +24,7 @@ class RecipeCollection {
     //import recipes
     $this->recipes = array();
     while ($line = fgets($fp)) {
-      $this->add($line);
+      $this->add(chomp($line));
     }
 
     fclose($fp);
@@ -36,7 +36,7 @@ class RecipeCollection {
   }
   public function printWithId($id) {
     if (isset($this->recipes[$id])) {
-      echo  $id . ": " . $this->recipes[$id];
+      echo  $id . ": " . $this->recipes[$id] . PHP_EOL;
     }
   }
   public function toArray() {
