@@ -25,11 +25,7 @@ class RecipeCollection {
     //import recipes
     $this->recipes = array();
     while ($line = fgets($fp)) {
-      // split $line by ' '
-      $elems = explode(' ', chomp($line));
-      $recipe_name = $elems[0];
-      $recipe_url  = $elems[1];
-      $this->add(new Recipe($recipe_name, $recipe_url));
+      $this->add($this->recipeFromFileLine($line));
     }
 
     fclose($fp);
@@ -50,6 +46,14 @@ class RecipeCollection {
 
   private function add($recipe) {
     $this->recipes[] = $recipe;
+  }
+  private function recipeFromFileLine($line) {
+    // split $line by ' '
+    $elems = explode(' ', chomp($line));
+    $recipe_name = $elems[0];
+    $recipe_url  = $elems[1];
+
+    return new Recipe($recipe_name, $recipe_url);
   }
 
 
