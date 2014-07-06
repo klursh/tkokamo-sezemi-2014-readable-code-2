@@ -1,16 +1,22 @@
+# 良い所
 
-before: https://github.com/klursh/klursh-sezemi-2014-readable-code-2/blob/master/index.php  
-after:  https://github.com/tkokamo/klursh-sezemi-2014-readable-code-2/blob/master/index.php
+##  複雑回避
+- before: https://github.com/klursh/klursh-sezemi-2014-readable-code-2/blob/master/index.php
+  * 制御文で何をやっているのかわからなかった。
 
-関数の返り値をそのまま利用することを避けて、一度意味のある変数に落としてから使う。  
-例えば、制御文で何をやっているのかがわからなくなるのを避ける。
-
-
-https://github.com/klursh/klursh-sezemi-2014-readable-code-2/blob/master/index.php  
-それぞれの処理の記述前に、おおよそどのようなことをしたいのかが書いてある。  
- -最初は細かい所をみないので、だいたい何をしたいかわかると以降のコードリーデイングに役立つ。
+- after:  https://github.com/tkokamo/klursh-sezemi-2014-readable-code-2/blob/master/index.php
+  * 関数の返り値をそのまま利用することを避けて、一度意味のある変数に落としてから使う。  
+  例えば、制御文で何をやっているのかがわからなくなるのを避ける。
 
 
+
+##  ミニマムコメント
+- https://github.com/klursh/klursh-sezemi-2014-readable-code-2/blob/master/index.php
+  * それぞれの処理の記述前に、おおよそどのようなことをしたいのかが書いてある。  
+  最初は細かい所をみないので、だいたい何をしたいかわかると以降のコードリーデイングに役立った。
+
+
+##  その他
 パラメータのチェックで、エラーメッセージがそのままコメントのようになっていたため、  
 そこでどんなチェックをしているのかがひと目で分かった。
 
