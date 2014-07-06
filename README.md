@@ -3,8 +3,8 @@
 
 - プログラムの実行
 
-spec3:
-	$php spec3.php <INPUT FILE>
+spec5:
+	$php main.php <INPUT FILE>
 	INPUT FILEはレシピの保存してあるファイル。
 
 INPUT FILEの作成:
