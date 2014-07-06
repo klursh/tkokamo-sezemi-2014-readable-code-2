@@ -26,12 +26,11 @@ class Recipe {
     
     fclose($fp);
   }
-
+  
   public function printRecipeWithId() {
     $i = 1;
     foreach ($this->recipes as $recipe) {
-      echo  $i++ . ": " . $recipe;
-      
+      echo  $i++ . ": " . $recipe;    
     }
   }
 

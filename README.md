@@ -1,7 +1,7 @@
 開発言語
  php
 
-実行方法: 
+プログラムの実行: 
 
 spec3:
 	$php spec3.php <INPUT FILE>
