@@ -1,6 +1,6 @@
 <?php
 
-require_once './Recipe.php';
+require_once './RecipeCollection.php';
 
 //command line arg check
 if ($argc < 2) {
@@ -9,8 +9,8 @@ if ($argc < 2) {
 }
 
 //initialize recipe
-$recipes = new Recipe($argv[1]);
-if ($recipes === NULL) { 
+$recipes = new RecipeCollection($argv[1]);
+if ($recipes === NULL) {
   echo "Initialize Recipe failed" . PHP_EOL;
   exit(1);
 }
