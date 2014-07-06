@@ -37,6 +37,9 @@ class RecipeCollection {
       echo  $id . ": " . $this->recipes[$id];
     }
   }
+  public function toArray() {
+    return $this->recipes;
+  }
 
   private function add($recipe) {
     $this->recipes[] = $recipe;

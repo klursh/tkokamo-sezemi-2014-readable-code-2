@@ -15,6 +15,15 @@ if ($recipes === NULL) {
   exit(1);
 }
 
-$recipes->printAllWithId();
+
+if ($argc === 2) {
+  // 引数がファイル名のみの場合
+  $recipes->printAllWithId();
+}
+else {
+  // IDが指定された場合
+  $id = intval($argv[2]);
+  $recipes->printWithId($id);
+}
 
 ?>
