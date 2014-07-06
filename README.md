@@ -4,7 +4,7 @@
 - プログラムの実行
 
 spec7:
-	$php main.php <INPUT FILE> [<ID>]
+	$php main.php \<INPUT FILE\> [\<ID\>]
 	INPUT FILEはレシピの保存してあるファイル。
 	IDは表示するレシピのID。
 
